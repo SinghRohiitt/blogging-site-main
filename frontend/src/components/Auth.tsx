@@ -39,7 +39,7 @@ export default function Auth({ type }: { type: "signup" | "signin" }) {
           setError("root", {
             message: e.response.data.msg,
           });
-          // alert(e.response.data.msg);
+         
         }
       } else {
         console.error("An unexpected error occurred", e);
@@ -92,7 +92,7 @@ export default function Auth({ type }: { type: "signup" | "signin" }) {
               <LabeledInput
                 label="Email"
                 name="email"
-                placeholder="rahmatdeep@gmail.com"
+                placeholder="xyz@gmail.com"
                 register={register}
                 disabled={isSubmitting}
               />
